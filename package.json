@@ -1,0 +1,27 @@
+{
+  "name": "mevn-peluqueria-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "app backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "dev:postman": "node --watch index.js --postman",
+    "seed:import": "node data/seed --import",
+    "seed:destroy": "node data/seed --destroy"
+  },
+  "author": "puly garcia",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "date-fns": "^2.30.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.3",
+    "nodemailer": "^6.9.6"
+  }
+}
